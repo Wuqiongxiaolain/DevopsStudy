@@ -1,0 +1,21 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "mingw64-gcc",
+            "displayName": "GCC 8.1.0 x86_64-w64-mingw32",
+            "description": "使用编译器: C = D:/mingw64/bin/gcc.exe, CXX = D:/mingw64/bin/g++.exe",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "D:/mingw64/bin/gcc.exe",
+                "CMAKE_CXX_COMPILER": "D:/mingw64/bin/g++.exe",
+                "CMAKE_BUILD_TYPE": "Debug"
+            },
+            "environment": {
+                "VCPKG_ROOT": "D:/Dev/vcpkg/"
+            }
+        }
+    ]
+}

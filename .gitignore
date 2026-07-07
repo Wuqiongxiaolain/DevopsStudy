@@ -1,0 +1,14 @@
+# 编译产物
+*.o
+*.obj
+*.exe
+
+# 构建输出目录
+out/*
+build/*
+
+# vcpkg 安装的依赖包目录
+vcpkg_installed/*
+
+# IDE 配置（可根据团队需要决定是否忽略 .vscode）
+# .vscode/*

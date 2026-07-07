@@ -1,0 +1,35 @@
+{
+    // ========== Clang-Format 配置 ==========
+    // 保存时自动格式化代码
+    "editor.formatOnSave": true,
+    // 指定 C/C++ 的默认格式化工具为 Clang-Format
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+
+    // ========== Cppcheck 配置 ==========
+    // 启用 cpp-check-lint 插件
+    "cpp-check-lint.--enable": true,
+    // cppcheck 可执行文件路径（如已加入 PATH 则只需写 "cppcheck"）
+    "cpp-check-lint.cppcheck.--executable": "D:\\Dev\\Cppcheck\\cppcheck.exe",
+    // 取消内联抑制
+    "cpp-check-lint.cppcheck.--inline-suppr": false,
+    // 使用 C++ 语言进行检查
+    "cpp-check-lint.cppcheck.--language=": "c++",
+    // 不在保存时自动检查（按需手动触发，避免频繁检查）
+    "cpp-check-lint.cppcheck.--onsave": false,
+    // 关闭 quick_fix
+    "cpp-check-lint.cppcheck.--quick_fix": false,
+    // 关闭 cpplint（使用 cppcheck 即可）
+    "cpp-check-lint.cpplint.--enable": false,
+
+    // ========== CMake Tools 配置 ==========
+    // 配置 CMake 时使用的预设
+    "cmake.configureOnOpen": true,
+    "cmake.configureSettings": {
+        "CMAKE_BUILD_TYPE": "Debug"
+    }
+}
